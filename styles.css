@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-saturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    /* font-size: 18px; */
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-cyan);
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-position: right top, left bottom;
+    background-repeat: no-repeat,  no-repeat;
+}
+
+.component {
+    height: 400px;
+    width: max(320px, 24%);
+    border: 1px solid var(--dark-cyan);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 60px var(--dark-cyan);
+}
+
+.card-bg {
+    height: 40%;
+    position: relative;
+    background-image: url("./images/bg-pattern-card.svg");
+}
+
+figure, #profile-pic {
+    border-radius: 50%;
+}
+
+figure {
+    position: absolute;
+    background-color: white;
+    height: 100px;
+    bottom: -50%;
+    left: 50%;
+    padding: 5px;
+    transform: translate(-50%, -30%);
+}
+
+.content {
+    height: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.name {
+    margin-top: 2.5rem;
+}
+
+.bold {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.mute {
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+.small {
+    font-size: 14px;
+    text-align: center;
+}
+
+.divider {
+    height: 1px;
+    background-color: lightgray;
+    width: 100%;
+}
+
+.statistics{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stats {
+    display: inline-block;
+}
+.attribution {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.attribution a {
+    color: var(--very-dark-saturated-blue);
+}
