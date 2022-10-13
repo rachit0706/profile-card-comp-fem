@@ -25,8 +25,8 @@ main {
     align-items: center;
     background-color: var(--dark-cyan);
     background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
-    background-position: right top, left bottom;
-    background-repeat: no-repeat,  no-repeat;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -75% 159%, 184% -69%;
 }
 
 .component {
